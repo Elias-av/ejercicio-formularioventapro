@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crear un formulario que les permita registra una venta de un producto</title>
+</head>
+
+<body>
+    <section class="form-register">
+        <p> <b> <center> Instrucciones</center></b></p>
+        <p> <b> <center> Crear un formulario que les permita registra una venta de un producto</center></b></p>
+
+        <input  type="text" name="nombre" id="nombre"  placeholder="ingrese el nombre">
+        <input  type="text" name="precio" id="precio" placeholder="ingrese precio" placeholder="ingrese su nombre">
+        <input  type="text" name="cantidad" id="cantidad" placeholder="ingrese la cantidad">
+        <input  type="button" name="name"  value="vender" onclick="total();">
+    </section>
+
+<script type="text/javascript">
+
+function total ()
+{
+    var nombre = document.getElementById("nombre").value;
+    var precio= parseInt(document.getElementById('precio').value);
+    var cantidad= parseInt(document.getElementById('cantidad').value);
+    var resultado;
+    resultado = (precio * cantidad) * 1.18 ;
+
+    alert("el total del producto " +nombre+ "  es: "  +resultado+ " (total)");
+   
+}
+
+
+
+</script>
+
+</body>
+
+</html>
